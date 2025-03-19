@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to MSDEVBUILD Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: #ff9900;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ff9900;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">MSDEVBUILD Shop</div>
+        <div class="content">
+            <h2>Welcome, {{UserName}}!</h2>
+            <p>Thank you for signing up at MSDEVBUILD Shop. We’re excited to have you on board!</p>
+            <p>Start shopping now and enjoy exclusive deals.</p>
+            <a href="{{ShopLink}}" class="button">Shop Now</a>
+        </div>
+        <div class="footer">
+            &copy; 2025 MSDEVBUILD Shop. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
