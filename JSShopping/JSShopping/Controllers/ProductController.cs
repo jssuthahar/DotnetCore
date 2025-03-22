@@ -12,7 +12,7 @@ namespace JSShopping.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            await emailService.EmailAsync("jssuthahar@gmail.com", "MSDEVBUILD", "Welcome to Dotnet core");
+         //   await emailService.EmailAsync("jssuthahar@gmail.com", "MSDEVBUILD", "Welcome to Dotnet core");
             var products = new List<Product>
         {
             new Product { Id = 1, Name = "Laptop", Price = 1000, ImageUrl = "laptop.jpg" },
