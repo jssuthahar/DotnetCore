@@ -8,7 +8,7 @@ namespace JSShopAPI.DataAccess
         public readonly string ConnectionString;
         public SQLHelper()
         {
-            ConnectionString = "Server=tcp:jsquare.database.windows.net,1433;Initial Catalog=jscollege;Persist Security Info=False;User ID=jsquare;Password=Welcome@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
+            ConnectionString = "YOUR CONNECTION";
         }
         public SqlConnection GetConnection()
         {
