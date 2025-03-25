@@ -1,0 +1,189 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\businesslogic\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\businesslogic\\userlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\dataaccess\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\dataaccess\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\jsshopapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\jsshopapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|c:\\users\\hp\\source\\repos\\jsshopapi\\jsshopapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{72B4B6C3-EE70-4580-957D-7C8718D6641F}|JSShopAPI\\JSShopAPI.csproj|solutionrelative:jsshopapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "JSShopAPI\\Model\\Student.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Model\\Student.cs",
+              "RelativeToolTip": "JSShopAPI\\Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:15:05.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserLogic.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\BusinessLogic\\UserLogic.cs",
+              "RelativeDocumentMoniker": "JSShopAPI\\BusinessLogic\\UserLogic.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\BusinessLogic\\UserLogic.cs",
+              "RelativeToolTip": "JSShopAPI\\BusinessLogic\\UserLogic.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwCMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:12:37.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQLHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\DataAccess\\SQLHelper.cs",
+              "RelativeDocumentMoniker": "JSShopAPI\\DataAccess\\SQLHelper.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\DataAccess\\SQLHelper.cs",
+              "RelativeToolTip": "JSShopAPI\\DataAccess\\SQLHelper.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAMwCAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:07:21.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "JSShopAPI\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "JSShopAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwDwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:06:33.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "JSShopAPI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "JSShopAPI\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAA9wDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:35:21.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Program.cs",
+              "RelativeDocumentMoniker": "JSShopAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Program.cs",
+              "RelativeToolTip": "JSShopAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T14:34:15.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JSShopAPI.http",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\JSShopAPI.http",
+              "RelativeDocumentMoniker": "JSShopAPI\\JSShopAPI.http",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\JSShopAPI.http",
+              "RelativeToolTip": "JSShopAPI\\JSShopAPI.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-20T14:33:34.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "JSShopAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\appsettings.json",
+              "RelativeToolTip": "JSShopAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-20T14:33:30.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "JSShopAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Hp\\source\\repos\\JSShopAPI\\JSShopAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "JSShopAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvx8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-20T14:32:58.194Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
