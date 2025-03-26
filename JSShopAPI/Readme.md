@@ -1,4 +1,4 @@
-# JSShopAPI - .NET Core E-Commerce API
+# JSShopAPI - .NET Core Studnet and E-Commerce API
 
 ## Overview
 JSShopAPI is a .NET Core-based e-commerce API that provides a backend solution for managing user registration, login, and listing items. The project integrates Swagger for API documentation and uses ADO.NET for database interactions.
