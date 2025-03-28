@@ -1,0 +1,31 @@
+﻿<Window x:Class="Employee.CollWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Employee"
+        mc:Ignorable="d"
+        Title="CollWindow" Height="450" Width="800">
+    <StackPanel>
+        <TextBlock Text="Sno"></TextBlock>
+        <TextBox x:Name="txtsno"></TextBox>
+        <TextBlock Text="Name"></TextBlock>
+        <TextBox x:Name="txtname"></TextBox>
+        <TextBlock Text="Course"></TextBlock>
+        <TextBox x:Name="txtcourse"></TextBox>
+        <Button x:Name="btnarraylist" Click="btnarraylist_Click" Content="Register"></Button>
+        <ComboBox x:Name="lstbox"></ComboBox>
+        <ListView x:Name="lstview">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Sno" DisplayMemberBinding="{Binding sno}"></GridViewColumn>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding sname}"></GridViewColumn>
+                    <GridViewColumn Header="course" DisplayMemberBinding="{Binding course}"></GridViewColumn>
+                </GridView>
+                </ListView.View>
+        </ListView>
+  
+
+
+    </StackPanel>
+</Window>
