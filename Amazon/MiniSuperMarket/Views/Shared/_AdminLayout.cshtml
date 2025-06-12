@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.css" rel="stylesheet" />
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Admin Page </h1>
+        @RenderBody()
+    </div>
+</body>
+</html>
