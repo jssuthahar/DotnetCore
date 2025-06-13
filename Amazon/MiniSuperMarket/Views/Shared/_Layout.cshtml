@@ -17,15 +17,18 @@
                 <a href="#" class="deliver">Deliver</a>
                 <div class="map-icon">
                     <span class="material-symbols-outlined">location_on</span>
-                    <a href="#" class="location">Coimbatore</a>
+                    <a href="#" class="location">@ViewData["Location"]</a>
                 </div>
 
             </div>
             <div class="nav-search">
                 <select class="select-search">
-                    <option>All</option>
-                    <option>All Categories</option>
-                    <option>Amazon Devices</option>
+                    <option>@ViewBag.FilterOptions[0]</option>
+                    <option>@ViewBag.FilterOptions[1]</option>
+                    <option>@ViewBag.FilterOptions[2]</option>
+                    <option>@ViewBag.FilterOptions[3]</option>
+                    <option>@ViewBag.FilterOptions[4]</option>
+                 
                 </select>
                 <input type="text" placeholder="Search Amazon" class="search-input">
                 <div class="search-icon">
