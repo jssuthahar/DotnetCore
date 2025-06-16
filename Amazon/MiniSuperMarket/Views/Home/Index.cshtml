@@ -5,9 +5,11 @@
 </section>
 
 @{
-
+    TempData.Keep();
+    <h1>@TempData["Message"]</h1>
+    <h1>@TempData["ProductCount"]</h1>
     List<string> category = (List<string>)ViewData["Product"];
-    
+
         <section class="shop-section">
             <div class="shop-images">
                 <div class="shop-link">
