@@ -1,46 +1,26 @@
-﻿
+﻿@*@model MiniSuperMarket.Models.Product*@
+@model IEnumerable<MiniSuperMarket.Models.Product>
+
 <!-- Services Section -->
 <section id="services">
     @{
-        if (TempData.ContainsKey("Message") && TempData["Message"] is not null)
+        foreach (var item in Model)
         {
-            <h1>@TempData["Message"]</h1>
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="@item.Pimage" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">@item.Pname</h4>
+                    <p class="card-text">@item.ProductDescription</p>
+                    <a href="AboutProduct?id=@item.Pid"  >@item.price</a>
+                </div>
+            </div>
         }
-        if (TempData.ContainsKey("ProductCount") && TempData["ProductCount"] is not null)
-        {
-            <h1>@TempData["ProductCount"]</h1>
-        }
-
 
 
     }
 
 
 
-   
-    <div class="container">
-        <h2 class="text-center mb-5">Our Services</h2>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <div class="card p-4 shadow">
-                    <h4>Web Design</h4>
-               
-                    <p>Modern and responsive UI/UX design for all devices.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4 mt-md-0">
-                <div class="card p-4 shadow">
-                    <h4>Development</h4>
-                    <p>Scalable and high-performance website development.</p>
-                </div>
-            </div>
-            <div class="col-md-4 mt-4 mt-md-0">
-                <div class="card p-4 shadow">
-                    <h4>SEO & Marketing</h4>
-                    <p>Boost your site traffic with optimized SEO strategies.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </section>
 

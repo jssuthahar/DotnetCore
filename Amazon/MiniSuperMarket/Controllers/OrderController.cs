@@ -8,5 +8,9 @@ namespace MiniSuperMarket.Controllers
         {
             return View();
         }
+        public IActionResult Return()
+        {
+            return View();
+        }
     }
 }

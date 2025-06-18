@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -9,6 +11,7 @@
 </head>
 <body>
     <header>
+       
         <nav class="navbar">
             <div class="nav-logo">
                 <a href="#"><img src="images/amazon_logo.png" alt="logo"></a>
@@ -50,21 +53,21 @@
                 </div>
             </div>
             <div class="sign-in">
-                <a href="#">
+                <a asp-controller="User" asp-action="Register">
                     <p>Hello, sign in</p>
                     <span>Account &amp; Lists</span>
                 </a>
             </div>
 
             <div class="returns">
-                <a href="#">
+                <a asp-controller="Order" asp-action="Return">
                     <p>Returns</p>
                     <span>&amp; Orders</span>
                 </a>
             </div>
 
             <div class="cart">
-                <a href="Order/Cart">
+                <a asp-controller="Order" asp-action="Cart">
                     <span class="material-symbols-outlined cart-icon">shopping_cart</span>
                 </a>
                 <p>Cart</p>
@@ -79,7 +82,7 @@
                 </div>
 
                 <ul class="links">
-                    <li><a href="#">Today's Deals</a></li>
+                    <li><a asp-action="Product" asp-controller="Home">Today's Deals</a></li>
                     <li><a href="#">Customer Service</a></li>
                     <li><a href="#">Registry</a></li>
                     <li><a href="#">Gift Cards</a></li>

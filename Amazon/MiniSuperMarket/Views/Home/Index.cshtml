@@ -1,4 +1,6 @@
-﻿<section class="" hero-section">
+﻿
+
+<section class="" hero-section">
     <div>
         <img src="images/hero-img.jpg" alt="banner" class="banner-image">
     </div>
@@ -6,38 +8,39 @@
 
 @{
     TempData.Keep();
-    <h1>@TempData["Message"]</h1>
-    <h1>@TempData["ProductCount"]</h1>
-    List<string> category = (List<string>)ViewData["Product"];
+<h1>@TempData["Message"]</h1>
+<h1>@TempData["ProductCount"]</h1>
+List<string> category = (List<string>)ViewData["Product"];
+<a asp-controller="Product" asp-action="Index">Product </a>
 
-        <section class="shop-section">
-            <div class="shop-images">
-                <div class="shop-link">
-                    <h3>@category[0]</h3>
-                    <img src="images/img-1.png" alt="card">
-                    <a href="#">Shop now</a>
-                </div>
-                <div class="shop-link">
-                    <h3>@category[1]</h3>
-                    <img src="images/img-2.png" alt="card">
-                    <a href="#">Shop now</a>
-                </div>
-                <div class="shop-link">
-                    <h3>@category[2]</h3>
-                    <img src="images/img-3.png" alt="card">
-                    <a href="#">Shop now</a>
-                </div>
-                <div class="shop-link">
-                    <h3>@category[3]</h3>
-                    <img src="images/img-4.png" alt="card">
-                    <a href="#">Shop now</a>
-                </div>
-                <span class="material-symbols-outlined">location_on</span>
+<section class="shop-section">
+    <div class="shop-images">
+        <div class="shop-link">
+            <h3>@category[0]</h3>
+            <img src="images/img-1.png" alt="card">
+            <a href="#">Shop now</a>
+        </div>
+        <div class="shop-link">
+            <h3>@category[1]</h3>
+            <img src="images/img-2.png" alt="card">
+            <a href="#">Shop now</a>
+        </div>
+        <div class="shop-link">
+            <h3>@category[2]</h3>
+            <img src="images/img-3.png" alt="card">
+            <a href="#">Shop now</a>
+        </div>
+        <div class="shop-link">
+            <h3>@category[3]</h3>
+            <img src="images/img-4.png" alt="card">
+            <a href="#">Shop now</a>
+        </div>
+        <span class="material-symbols-outlined">location_on</span>
 
-                <a href="#" class="location"></a>
-            </div>
-        </section>
-   // }
+        <a href="#" class="location"></a>
+    </div>
+</section>
+// }
 
 }
 
