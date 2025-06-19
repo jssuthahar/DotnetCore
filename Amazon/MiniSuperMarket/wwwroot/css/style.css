@@ -11,9 +11,9 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
+.navbar a {
+    text-decoration: none;
+    color: #fff;
 }
 
 a:hover {
@@ -156,8 +156,27 @@ header {
 }
 
 .links a {
-  padding: 10px 0;
-}
+        padding: 8px 16px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: background 0.2s, color 0.2s;
+        display: block;
+    }
+    .links a:hover,
+    .links a:focus {
+        background: #232f3e;
+        color: #febd69;
+        text-decoration: none;
+    }
+
+    .links a.active,
+    .links a[aria-current="page"] {
+        color: #febd69;
+        border-bottom: 2px solid #febd69;
+        background: #232f3e;
+    }
 
 .deals a {
   font-size: 0.9rem;
@@ -263,4 +282,12 @@ header {
 
 .footer-items li a:hover {
   text-decoration: underline;
+}
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    min-height: 60px;
 }

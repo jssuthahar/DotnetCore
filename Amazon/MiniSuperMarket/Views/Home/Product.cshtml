@@ -1,26 +1,27 @@
 ﻿@*@model MiniSuperMarket.Models.Product*@
-@model IEnumerable<MiniSuperMarket.Models.Product>
-
+@*@model (IEnumerable<MiniSuperMarket.Models.Product>, IEnumerable<MiniSuperMarket.Models.Seller>)*@
+@model IEnumerable<MiniSuperMarket.Models.ProductSeller>
 <!-- Services Section -->
-<section id="services">
-    @{
-        foreach (var item in Model)
+<section class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
         {
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="@item.Pimage" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">@item.Pname</h4>
-                    <p class="card-text">@item.ProductDescription</p>
-                    <a href="AboutProduct?id=@item.Pid"  >@item.price</a>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@item.ProductData.Pimage" class="card-img-top" alt="@item.ProductData.Pname">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ProductData.Pname</h5>
+                        <p class="card-text">@item.ProductData.ProductDescription</p>
+                        <span class="fw-bold text-success">$@item.ProductData.ProductDescription</span>
+                      
+
+                            <span class="fw-bold text-success">@item.SellerData.Name</span>
+                        
+                        <a asp-action="AboutProduct" asp-controller="Home" asp-route-id="@item.ProductData.Pid" class="btn btn-primary w-100 mt-2">View Details</a>
+                    </div>
                 </div>
             </div>
         }
-
-
-    }
-
-
-
-
+    </div>
 </section>
 

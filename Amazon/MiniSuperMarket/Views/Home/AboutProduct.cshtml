@@ -1,10 +1,23 @@
-﻿@model MiniSuperMarket.Models.Product
+﻿@model (MiniSuperMarket.Models.Product,MiniSuperMarket.Models.Seller)
 
-<div class="card" style="width:400px">
-    <img class="card-img-top" src="@Model.Pimage" alt="Card image">
-    <div class="card-body">
-        <h4 class="card-title">@Model.Pname</h4>
-        <p class="card-text">@Model.ProductDescription</p>
-        <a href="#" class="btn btn-primary">@Model.price</a>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <img class="card-img-top p-4" src="@Model.Item1.Pimage" alt="@Model.Item1.Pname" style="height:320px; object-fit:contain;">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">@Model.Item1.Pname</h3>
+                    <p class="card-text text-muted mb-4">@Model.Item1..ProductDescription</p>
+                    <div class="mb-3">
+                        <span class="fs-4 fw-bold text-success">$@Model.Item1.price</span>
+                    </div>
+                    <div class="mb-3">
+                        <span class="fs-4 fw-bold text-success">$@Model.Item2.Name</span>
+                    </div>
+                    <button class="btn btn-warning w-100 mb-2">Add to Cart</button>
+                    <a href="/Home/Product" class="btn btn-outline-secondary w-100">Back to Products</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
