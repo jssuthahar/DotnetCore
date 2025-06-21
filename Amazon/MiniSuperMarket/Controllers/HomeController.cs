@@ -19,6 +19,8 @@ namespace MiniSuperMarket.Controllers
                 new Product { Pid = 6, Pname = "Google", ProductCategory = PCategory.Electronics, ProductDescription = "Digital camera with high resolution", price = 20000,Pimage="/images/mobile/Mobile2.jpg" }
             };
         }
+
+        [HttpGet]
         public IActionResult Index()
         {
             ViewData["Location"] = "Bangalore";
@@ -33,6 +35,7 @@ namespace MiniSuperMarket.Controllers
 
             return View();
         }
+        [HttpGet]
         public IActionResult Product()
         {
             ViewData["Location"] = "Bangalore";
@@ -67,6 +70,7 @@ namespace MiniSuperMarket.Controllers
             ViewBag.FilterOptions = new List<string> { "All", "All Categories", "Amazon Devices", "Next Day Delivery", "Same Day Delivery" };
             return View(productSellers);
         }
+      
         public IActionResult AboutProduct(string id)
         {
             var product = products.FirstOrDefault(p => p.Pid == Convert.ToInt32(id));

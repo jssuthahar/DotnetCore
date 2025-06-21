@@ -1,2 +1,11 @@
-﻿
+﻿@model MiniSuperMarket.Models.Users
+
 <h1>Register</h1>
+@*@Html.DisplayForModel()*@
+
+@*@Html.DisplayFor(x=>x.Email)*@
+
+<form method="post" action="SaveData">
+    @Html.EditorForModel()
+    <input type="submit" value="SaveData" />
+</form>
