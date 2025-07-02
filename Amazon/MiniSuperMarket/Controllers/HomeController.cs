@@ -35,7 +35,14 @@ namespace MiniSuperMarket.Controllers
 
             return View();
         }
-        [HttpGet]
+        [Route("LoginPage")]
+        [Route("Home/Login")]
+        public IActionResult Login()
+        {
+
+            return View();
+        }
+        [HttpGet("Product")]
         public IActionResult Product()
         {
             ViewData["Location"] = "Bangalore";
@@ -70,10 +77,11 @@ namespace MiniSuperMarket.Controllers
             ViewBag.FilterOptions = new List<string> { "All", "All Categories", "Amazon Devices", "Next Day Delivery", "Same Day Delivery" };
             return View(productSellers);
         }
-      
-        public IActionResult AboutProduct(string id)
+
+        [HttpGet("Home/AboutProduct/{name}")]
+        public IActionResult AboutProduct(string name)
         {
-            var product = products.FirstOrDefault(p => p.Pid == Convert.ToInt32(id));
+            var product = products.FirstOrDefault(p => p.Pid == Convert.ToInt32(name));
             Seller os=new Seller() { SellerID = 1, Name = "John Doe" };
             if (product == null)
             {
