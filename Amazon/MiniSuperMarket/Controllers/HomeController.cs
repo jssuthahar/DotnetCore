@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MiniSuperMarket.Data;
+using MiniSuperMarket.Interface;
 using MiniSuperMarket.Models;
 
 namespace MiniSuperMarket.Controllers
@@ -7,8 +9,12 @@ namespace MiniSuperMarket.Controllers
     {
         List<Product> products;
         List<Seller> sellers;
-        public HomeController()
+        private ICalc calc;
+        public HomeController(ICalc calcobj)
         {
+            calc = calcobj;
+          
+            calc.Add(10, 20);
             products = new List<Product>
             {
                 new Product { Pid = 1, Pname = "Laptop", ProductCategory = PCategory.Electronics, ProductDescription = "High performance laptop", price = 50000, Pimage="/images/Laptop/laptop.jpg"},
@@ -23,6 +29,8 @@ namespace MiniSuperMarket.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+           
+            calc.Subtract(0, 20);
             ViewData["Location"] = "Bangalore";
             ViewData["Product"] = new List<string> { "Laptop",
                 "Mobile",
@@ -35,14 +43,13 @@ namespace MiniSuperMarket.Controllers
 
             return View();
         }
-        [Route("LoginPage")]
-        [Route("Home/Login")]
+      
         public IActionResult Login()
         {
 
             return View();
         }
-        [HttpGet("Product")]
+     
         public IActionResult Product()
         {
             ViewData["Location"] = "Bangalore";

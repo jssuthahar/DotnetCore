@@ -7,8 +7,9 @@ namespace MiniSuperMarket.Models
 {
     public class Users
     {
+        [Display(Name ="User ID")]
         [ValidateNever]
-        public int UserID { get; set; }
+        public int Id { get; set; }
         [DataType(DataType.Text)]
         [Required(ErrorMessage ="Please enter username")]
         [MaxLength(50, ErrorMessage = "Username cannot exceed 50 characters")]
@@ -21,6 +22,7 @@ namespace MiniSuperMarket.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
         [EmailAddress(ErrorMessage = "Please enter a valid email address")]
+        [NoEmailAttrribute(ErrorMessage = "Email cannot end with @gmail.com")]
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
         [DataType(DataType.PhoneNumber)]
@@ -30,10 +32,20 @@ namespace MiniSuperMarket.Models
         public string Address { get; set; }
         [DataType(DataType.Date)]
         [ValidateNever]
+        [Display(Name = "Data of Birth")]
         public string DOB { get; set; }
         [Range(0, 120, ErrorMessage = "Age must be between 0 and 120")]
-
+       
         public int Age { get; set; }
       
+    }
+    public class NoEmailAttrribute:ValidationAttribute
+    {
+        public override bool IsValid(object? value)
+        {
+            if (value is string email)
+                return !email.EndsWith("@gmail.com");
+            return true;
+        }
     }
 }
