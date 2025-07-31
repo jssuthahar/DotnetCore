@@ -1,8 +1,9 @@
-﻿using EmployeeApp.Model;
-using System.Windows;
+﻿using EmployeeApp.Common;
+using EmployeeApp.Model;
 using Newtonsoft.Json;
 using System.IO;
-using EmployeeApp.Common;
+using System.Windows;
+using System.Windows.Media;
 
 namespace EmployeeApp
 {
@@ -19,6 +20,7 @@ namespace EmployeeApp
         }
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
+            Application.Current.Resources["PrimaryColor"]= new SolidColorBrush(Colors.Red);
             //Model - Assign Value
             Users ouser = new Users();
             ouser.Name=txtName.Text;

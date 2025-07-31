@@ -1,0 +1,73 @@
+﻿<Window x:Class="EmployeeApp.View.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmployeeApp.View"
+        mc:Ignorable="d"
+        Title="JSDEVBRAINS - Login/Register" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#f3f4f6">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Left Panel -->
+        <Grid Background="#4f46e5">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="🔒 JSDEVBRAINS" FontSize="36" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                <TextBlock Text="Secure  Simplify Access" FontSize="16" Foreground="#d1d5db" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+                <Image  Source="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigZ9hrLCXakYYWUdZ6vMkhB1mTqui8jysC6RUF_boQ-nUhtJ2bJf5cf_laIk-g4jBYDiBuCFre8fUaZaL3M0YIxhOodmsud5Xxb8mfuowyXfJRfnAmdCq8sSzd_qqQ4EKuRO8VsErj-jVWSw8FUdMoGefWjSHQ10pSyPGYeKXiymmf0dq3MgTg6xzh0GaG/s320/Logo.png" Width="180" Height="180" Margin="0,30,0,0" />
+            </StackPanel>
+        </Grid>
+
+        <!-- Right Panel -->
+        <Grid Grid.Column="1" Background="White" >
+            <!-- Login Form -->
+            <Grid x:Name="LoginPanel">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+                    <TextBlock Text="Login" FontSize="26" FontWeight="Bold" Margin="0,0,0,20"/>
+
+                    <TextBlock Text="Email" FontSize="12" Foreground="Gray"/>
+                    <TextBox x:Name="txtLoginEmail" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,15"/>
+
+                    <TextBlock Text="Password" FontSize="12" Foreground="Gray"/>
+                    <PasswordBox x:Name="txtLoginPassword" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,25"/>
+
+                    <Button Content="Login" Height="40"  Cursor="Hand"/>
+
+                    <TextBlock Text="Don't have an account?" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="Gray"/>
+                    <Button Content="Switch to Register" Click="SwitchToRegister" Style="{StaticResource smallbuttonStyle}" Cursor="Hand"/>
+                </StackPanel>
+            </Grid>
+
+            <!-- Register Form -->
+            <Grid x:Name="RegisterPanel" Visibility="Collapsed">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+                    <TextBlock Text="Register" FontSize="26" FontWeight="Bold" Margin="0,0,0,20"/>
+
+                    <TextBlock Text="Name" FontSize="12" Foreground="Gray"/>
+                    <TextBox x:Name="txtRegName" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Email" FontSize="12" Foreground="Gray"/>
+                    <TextBox x:Name="txtRegEmail" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Password" FontSize="12" Foreground="Gray"/>
+                    <PasswordBox x:Name="txtRegPassword" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Confirm Password" FontSize="12" Foreground="Gray"/>
+                    <PasswordBox x:Name="txtRegConfirmPassword" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,25"/>
+
+                    <Button Content="Register" Height="40" Background="#10b981" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" Cursor="Hand"/>
+
+                    <TextBlock Text="Already have an account?" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="Gray"/>
+                    <Button Content="Switch to Login" Click="SwitchToLogin" Background="Transparent" Foreground="#4f46e5" BorderBrush="{x:Null}" FontWeight="Bold" Cursor="Hand"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

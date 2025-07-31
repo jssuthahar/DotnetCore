@@ -4,6 +4,27 @@
              xmlns:local="clr-namespace:EmployeeApp"
              StartupUri="Booking.xaml">
     <Application.Resources>
+   
+        <SolidColorBrush x:Key="PrimaryColor">#4f46e5</SolidColorBrush>
+
+        <SolidColorBrush x:Key="SecondaryColor">#f3f4f6</SolidColorBrush>
+        
+        <Style TargetType="Button" x:Key="smallbuttonStyle" BasedOn="{StaticResource {x:Type Button}}" >
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryColor}"></Setter>
+            
+        </Style>
+        
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource PrimaryColor}"></Setter>
+            <Setter Property="Foreground" Value="{StaticResource SecondaryColor}"></Setter>
+            <Setter Property="BorderBrush" Value="{x:Null}"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"></Setter>
+            <Setter Property="Foreground" Value="Gray"></Setter>
          
+        </Style>
     </Application.Resources>
 </Application>
