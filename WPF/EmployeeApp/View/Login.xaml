@@ -33,12 +33,27 @@
                     <TextBlock Text="Login" FontSize="26" FontWeight="Bold" Margin="0,0,0,20"/>
 
                     <TextBlock Text="Email" FontSize="12" Foreground="Gray"/>
-                    <TextBox x:Name="txtLoginEmail" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,15"/>
+                    <TextBox x:Name="txtLoginEmail" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,15">
+                        <TextBox.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem IsEnabled="True" Header="JSDevbrains" Click="MenuItem_Click"></MenuItem>
+                                <MenuItem IsEnabled="True" Header="Gmail" Click="MenuItem_Click_1"></MenuItem>
+                                <MenuItem IsEnabled="True" Header="Hotmail" Click="MenuItem_Click_2"></MenuItem>
+                            </ContextMenu>
+                            
+                        </TextBox.ContextMenu>
+                    </TextBox>
 
                     <TextBlock Text="Password" FontSize="12" Foreground="Gray"/>
-                    <PasswordBox x:Name="txtLoginPassword" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,25"/>
+                    <PasswordBox x:Name="txtLoginPassword" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,25">
+                        <PasswordBox.ContextMenu>
+                            <ContextMenu Visibility="Collapsed">
+                                
+                            </ContextMenu>
+                        </PasswordBox.ContextMenu>
+                    </PasswordBox>
 
-                    <Button Content="Login" Height="40"  Cursor="Hand"/>
+                    <Button x:Name="btnlogin" Click="btnlogin_Click" Content="Login" Height="40"  Cursor="Hand"/>
 
                     <TextBlock Text="Don't have an account?" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="Gray"/>
                     <Button Content="Switch to Register" Click="SwitchToRegister" Style="{StaticResource smallbuttonStyle}" Cursor="Hand"/>
@@ -61,8 +76,10 @@
 
                     <TextBlock Text="Confirm Password" FontSize="12" Foreground="Gray"/>
                     <PasswordBox x:Name="txtRegConfirmPassword" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,25"/>
+                    <TextBlock Text="Age" FontSize="12" Foreground="Gray"/>
+                    <TextBox x:Name="txtRegage" Height="35" Background="#f3f4f6" BorderThickness="0" Padding="10" Margin="0,5,0,10"/>
 
-                    <Button Content="Register" Height="40" Background="#10b981" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" Cursor="Hand"/>
+                    <Button Content="Register" x:Name="btnreg" Click="btnreg_Click" Height="40" Background="#10b981" Foreground="White" FontWeight="Bold" BorderBrush="{x:Null}" Cursor="Hand"/>
 
                     <TextBlock Text="Already have an account?" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="Gray"/>
                     <Button Content="Switch to Login" Click="SwitchToLogin" Background="Transparent" Foreground="#4f46e5" BorderBrush="{x:Null}" FontWeight="Bold" Cursor="Hand"/>

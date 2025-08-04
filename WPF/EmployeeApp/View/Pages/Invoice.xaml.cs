@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EmployeeApp
+namespace EmployeeApp.View.Pages
 {
     /// <summary>
-    /// Interaction logic for Home.xaml
+    /// Interaction logic for Invoice.xaml
     /// </summary>
-    public partial class Home : Window
+    public partial class Invoice : Page
     {
-        public Home()
+        public Invoice()
         {
             InitializeComponent();
         }

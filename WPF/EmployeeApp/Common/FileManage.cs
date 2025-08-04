@@ -15,7 +15,7 @@ namespace EmployeeApp.Common
             }
             return projectpath;
         }
-        public string getUserpath(string name)
+        public string getUserpath()
         {
             
             string rootpath = getRootpath();
@@ -26,9 +26,15 @@ namespace EmployeeApp.Common
             {
                 Directory.CreateDirectory(filepath);
             }
-            string filename = Path.Combine(filepath, $"{name}.json");
+            string filename = Path.Combine(filepath, "Users.json");
 
             return filename;
+        }
+
+        public string Getname(string email)
+        {
+            string name = email.Split('@')[0];
+            return name;
         }
     }
 }
