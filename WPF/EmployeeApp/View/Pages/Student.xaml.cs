@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EmployeeApp.Model;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
+using Newtonsoft.Json;
+using EmployeeApp.Common;
+using System.IO;
 namespace EmployeeApp.View.Pages
 {
     /// <summary>
@@ -23,6 +14,59 @@ namespace EmployeeApp.View.Pages
         public Student()
         {
             InitializeComponent();
+        }
+
+        private void btnreg_Click(object sender, RoutedEventArgs e)
+        {
+
+            int sid = 0;
+            StudentModel student = new StudentModel();
+            student.Sid = sid;
+            student.Name = txtFullName.Text;
+            student.Email = txtEmail.Text;
+            student.Phone = txtPhone.Text;
+            student.Address = txtAddress.Text;
+            student.DOB = dateDOB.SelectedDate.ToString();
+            student.Course = comboCourse.SelectedItem.ToString();
+
+
+
+            FileManage fileManage = new FileManage();
+            string rootpath = fileManage.getUserpath("Student");
+            List<StudentModel> liststudents = new List<StudentModel>();
+            //Read Existing data
+            if (File.Exists(rootpath) == true)
+            {
+                string existingData = File.ReadAllText(rootpath);
+                liststudents = JsonConvert.DeserializeObject<List<StudentModel>>(existingData);
+                student.Sid = liststudents.Count + 1; // Auto-increment Sid based on existing count
+                liststudents.Add(student);
+            }
+            else
+            {
+                liststudents.Add(student);
+            }
+
+            string output = JsonConvert.SerializeObject(liststudents);
+            File.WriteAllText(rootpath, output);
+            MessageBox.Show("Student Registered Successfully");
+            //int sid = 0;
+            //StudentModel student = new StudentModel();
+            //student.Sid = sid;
+            //student.Name = txtFullName.Text;
+            //student.Email = txtEmail.Text;
+            //student.Phone = txtPhone.Text;
+            //student.Address = txtAddress.Text;
+            //student.DOB = dateDOB.SelectedDate.ToString();
+            //student.Course = comboCourse.SelectedItem.ToString();
+
+            //string output=JsonConvert.SerializeObject(student);
+
+            //FileManage fileManage = new FileManage();
+            //string rootpath=fileManage.getUserpath("Student");
+            //File.WriteAllText(rootpath, output);
+            //Model - Assign Value
+
         }
     }
 }

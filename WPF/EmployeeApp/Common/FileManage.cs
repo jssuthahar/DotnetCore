@@ -15,18 +15,18 @@ namespace EmployeeApp.Common
             }
             return projectpath;
         }
-        public string getUserpath()
+        public string getUserpath(string path)
         {
             
             string rootpath = getRootpath();
 
             //Create new folder for User
-            string filepath = Path.Combine(rootpath, "User");
+            string filepath = Path.Combine(rootpath, path);
             if (!Directory.Exists(filepath))
             {
                 Directory.CreateDirectory(filepath);
             }
-            string filename = Path.Combine(filepath, "Users.json");
+            string filename = Path.Combine(filepath, $"{path}.json");
 
             return filename;
         }

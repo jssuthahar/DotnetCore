@@ -41,7 +41,7 @@ namespace EmployeeApp.View
 
             //Root Path
             FileManage fileManage = new FileManage();
-            string filename = fileManage.getUserpath();
+            string filename = fileManage.getUserpath("User");
             if (File.Exists(filename))
             {
                 string users = File.ReadAllText(filename);
@@ -70,7 +70,7 @@ namespace EmployeeApp.View
         private void btnlogin_Click(object sender, RoutedEventArgs e)
         {
             FileManage fileManage = new FileManage();
-            string userpath = fileManage.getUserpath();
+            string userpath = fileManage.getUserpath("User");
             if(File.Exists(userpath) == false)
             {
                 MessageBox.Show("User not registered");
