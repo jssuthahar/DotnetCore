@@ -44,9 +44,7 @@
                     <TextBox x:Name="txtPhone" Height="30" Margin="0,0,0,10"/>
                     <DatePicker x:Name="dateDOB" Height="30" Margin="0,0,0,10"/>
                     <ComboBox x:Name="comboCourse" Height="30" Margin="0,0,0,10">
-                        <ComboBoxItem Content="C# .NET"/>
-                        <ComboBoxItem Content="Azure"/>
-                        <ComboBoxItem Content="Python AI/ML"/>
+                       
                     </ComboBox>
                     <TextBox x:Name="txtAddress" Height="60" AcceptsReturn="True" TextWrapping="Wrap" Margin="0,0,0,10"/>
                 </StackPanel>

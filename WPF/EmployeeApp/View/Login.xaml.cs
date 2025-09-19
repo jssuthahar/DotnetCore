@@ -1,10 +1,9 @@
-﻿using EmployeeApp.Common;
-using EmployeeApp.Model;
+﻿
 using Newtonsoft.Json;
 using System.IO;
 using System.Windows;
 using System.Xml.Linq;
-
+using Microsoft.Data.SqlClient;
 namespace EmployeeApp.View
 {
     /// <summary>
@@ -30,71 +29,109 @@ namespace EmployeeApp.View
 
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
-            List<Users> listusers = new List<Users>();
-            //Model - Assign Value
-            Users ouser = new Users();
-            ouser.Name = txtRegName.Text;
-            ouser.Email = txtRegEmail.Text;
-            ouser.Password = txtRegPassword.Password;
-            ouser.Age = Convert.ToInt32(txtRegage.Text);
-            ouser.Id = 1; // Assuming Id is auto-generated or managed elsewhere
-
-            //Root Path
-            FileManage fileManage = new FileManage();
-            string filename = fileManage.getUserpath("User");
-            if (File.Exists(filename))
+            try
             {
-                string users = File.ReadAllText(filename);
-                listusers = JsonConvert.DeserializeObject<List<Users>>(users);
-               
-                int count=listusers.Count;
-                ouser.Id = count + 1; 
-                listusers.Add(ouser);
-                string json = JsonConvert.SerializeObject(listusers);
-                //Write json data to file
-                File.WriteAllText(filename, json);
-                MessageBox.Show("User Registered Successfully");
 
+                bool isValid = isValidEmail(txtRegEmail.Text);
+                if (isValid == false)
+                {
+                    MessageBox.Show("Email already exists");
 
+                }
+                else
+                {
+                    SqlConnection sql = new SqlConnection();
+                    sql.ConnectionString = @"Data Source=DESKTOP-OCCP11M\SQLEXPRESS;Initial Catalog=EMPLOYEEAPP;Integrated Security=True;Encrypt=false";
+                    sql.Open();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO USERS VALUES(@name,@email,@password,@age)", sql);
+                    cmd.Parameters.AddWithValue("@name", txtRegName.Text);
+                    cmd.Parameters.AddWithValue("@email", txtRegEmail.Text);
+                    cmd.Parameters.AddWithValue("@password", txtRegPassword.Password);
+                    cmd.Parameters.AddWithValue("@age", txtRegage.Text);
+                    int val = cmd.ExecuteNonQuery();
+                    if (val > 0)
+                    {
+                        MessageBox.Show("User Registered Successfully");
+                    }
+                }
             }
-            else
+            catch(SqlException ex)
             {
-                listusers.Add(ouser);
-                string json = JsonConvert.SerializeObject(listusers);
-                //Write json data to file
-                File.WriteAllText(filename, json);
-                MessageBox.Show("User Registered Successfully");
+                MessageBox.Show("SQL Error: " + ex.Message);
             }
+           
+
+        }
+
+        private bool isValidEmail(string email)
+        {
+            SqlConnection sql = new SqlConnection();
+            sql.ConnectionString = @"Data Source=DESKTOP-OCCP11M\SQLEXPRESS;Initial Catalog=EMPLOYEEAPP;Integrated Security=True;Encrypt=false";
+            sql.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sql;
+            cmd.CommandText = $"SELECT COUNT(*) FROM USERS WHERE Email=@email";
+            cmd.Parameters.AddWithValue("@email", email);
+            int count = (int)cmd.ExecuteScalar();
+
+            bool val= count>0 ? false : true;
+            return val;
+            //if(count > 0)
+            //{
+            //    val = false;
+            //}
+            //else
+            //{
+            //    val = true;
+            //}
+
+
         }
 
         private void btnlogin_Click(object sender, RoutedEventArgs e)
         {
-            FileManage fileManage = new FileManage();
-            string userpath = fileManage.getUserpath("User");
-            if(File.Exists(userpath) == false)
-            {
-                MessageBox.Show("User not registered");
-                return;
-            }
-            else
-            {
-                string output = File.ReadAllText(userpath);
-                List<Users> data = JsonConvert.DeserializeObject<List<Users>>(output);
 
-                var user= from x in data
-                          where x.Email==txtLoginEmail.Text && x.Password==txtLoginPassword.Password
-                          select x;
-                if(user.Count() >0)
+            using (SqlConnection sql = new SqlConnection())
+            {
+                try
                 {
-                    Home home = new Home();
-                    home.Show();
-                    this.Close();
+                    sql.ConnectionString = @"Data Source=DESKTOP-OCCP11M\SQLEXPRESS;Initial Catalog=EMPLOYEEAPP;Integrated Security=True;Encrypt=false";
+                    sql.Open();
+                    using (SqlCommand cmd = new SqlCommand())
+                    {
+                        cmd.Connection = sql;
+                        cmd.CommandText = "SELECT COUNT(*) FROM USERS WHERE Email=@email and Password=@password";
+                        cmd.Parameters.AddWithValue("@email", txtLoginEmail.Text);
+                        cmd.Parameters.AddWithValue("@password", txtLoginPassword.Password);
+                        int count = (int)cmd.ExecuteScalar();
+
+                        bool val = count > 0 ? true : false;
+                        if (val == false)
+                        {
+                            MessageBox.Show("Invalid Credentials");
+                        }
+                        else
+                        {
+                            Home home = new Home();
+                            home.Show();
+                            this.Close();
+                        }
+                    }
                 }
-                else
+                catch (SqlException ex)
                 {
-                    MessageBox.Show("Invalid Credentials");
+                    // Erro Logging
+                    //Firebase Crashlytics
+                    //Cloud Logging
+                    MessageBox.Show("SQL Error: " + ex.Message);
                 }
+                finally
+                {
+                    sql.Close();
+                }
+
             }
+        }
 
 
 
@@ -111,7 +148,6 @@ namespace EmployeeApp.View
             //}
 
 
-        }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {

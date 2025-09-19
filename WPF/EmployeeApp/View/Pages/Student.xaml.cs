@@ -1,9 +1,10 @@
-﻿using EmployeeApp.Model;
+﻿
+using Microsoft.Data.SqlClient;
+using System.Data;
 using System.Windows;
 using System.Windows.Controls;
-using Newtonsoft.Json;
-using EmployeeApp.Common;
-using System.IO;
+using EmployeeApp.Model;
+using EmployeeApp.BL;
 namespace EmployeeApp.View.Pages
 {
     /// <summary>
@@ -14,58 +15,65 @@ namespace EmployeeApp.View.Pages
         public Student()
         {
             InitializeComponent();
+
+          string Connection = "Data Source=DESKTOP-OCCP11M\\SQLEXPRESS;Initial Catalog=EMPLOYEEAPP;Integrated Security=True;Encrypt=false";
+
+           SqlConnection sql = new SqlConnection();
+            sql.ConnectionString = Connection;
+            sql.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = sql;
+            cmd.CommandText = "SELECT CID,CNAME FROM COURSE";
+            SqlDataAdapter oda = new SqlDataAdapter(cmd);
+            DataSet dataSet = new DataSet();
+            oda.Fill(dataSet,"Course");
+
+            comboCourse.DisplayMemberPath= "CNAME";
+            comboCourse.SelectedValuePath= "CID";
+            comboCourse.ItemsSource = dataSet.Tables["Course"].DefaultView;
+            sql.Close();
+
+
         }
 
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
-
-            int sid = 0;
-            StudentModel student = new StudentModel();
-            student.Sid = sid;
-            student.Name = txtFullName.Text;
+            EmployeeApp.Model.Student student = new EmployeeApp.Model.Student();
+            Register or = new Register();
+            student.Sname = txtFullName.Text;
             student.Email = txtEmail.Text;
-            student.Phone = txtPhone.Text;
+            student.Phone = Convert.ToInt16(txtPhone.Text);
+            student.Dob = dateDOB.SelectedDate?.ToString("yyyy-MM-dd");
+            student.Cid = Convert.ToInt16(comboCourse.SelectedValue);
             student.Address = txtAddress.Text;
-            student.DOB = dateDOB.SelectedDate.ToString();
-            student.Course = comboCourse.SelectedItem.ToString();
+            int result = or.RegisterCourse(student);
+            //try
+            //{
 
 
 
-            FileManage fileManage = new FileManage();
-            string rootpath = fileManage.getUserpath("Student");
-            List<StudentModel> liststudents = new List<StudentModel>();
-            //Read Existing data
-            if (File.Exists(rootpath) == true)
-            {
-                string existingData = File.ReadAllText(rootpath);
-                liststudents = JsonConvert.DeserializeObject<List<StudentModel>>(existingData);
-                student.Sid = liststudents.Count + 1; // Auto-increment Sid based on existing count
-                liststudents.Add(student);
-            }
-            else
-            {
-                liststudents.Add(student);
-            }
+            //        SqlConnection sql = new SqlConnection();
+            //        sql.ConnectionString = @"Data Source=DESKTOP-OCCP11M\SQLEXPRESS;Initial Catalog=EMPLOYEEAPP;Integrated Security=True;Encrypt=false";
+            //        sql.Open();
+            //        SqlCommand cmd = new SqlCommand("INSERT INTO StudCourse VALUES(@sname,@email,@phone,@dob,@cid,@address)", sql);
+            //        cmd.Parameters.AddWithValue("@sname", txtFullName.Text);
+            //        cmd.Parameters.AddWithValue("@email", txtEmail.Text);
+            //        cmd.Parameters.AddWithValue("@phone", txtPhone.Text);
+            //        cmd.Parameters.AddWithValue("@dob", dateDOB.SelectedDate);
+            //        cmd.Parameters.AddWithValue("@cid", comboCourse.SelectedValue);
+            //        cmd.Parameters.AddWithValue("@address", txtAddress.Text);
+            //        int val = cmd.ExecuteNonQuery();
+            //        if (val > 0)
+            //        {
+            //            MessageBox.Show("Student Registered Successfully");
+            //        }
 
-            string output = JsonConvert.SerializeObject(liststudents);
-            File.WriteAllText(rootpath, output);
-            MessageBox.Show("Student Registered Successfully");
-            //int sid = 0;
-            //StudentModel student = new StudentModel();
-            //student.Sid = sid;
-            //student.Name = txtFullName.Text;
-            //student.Email = txtEmail.Text;
-            //student.Phone = txtPhone.Text;
-            //student.Address = txtAddress.Text;
-            //student.DOB = dateDOB.SelectedDate.ToString();
-            //student.Course = comboCourse.SelectedItem.ToString();
+            //}
+            //catch (SqlException ex)
+            //{
+            //    MessageBox.Show("SQL Error: " + ex.Message);
+            //}
 
-            //string output=JsonConvert.SerializeObject(student);
-
-            //FileManage fileManage = new FileManage();
-            //string rootpath=fileManage.getUserpath("Student");
-            //File.WriteAllText(rootpath, output);
-            //Model - Assign Value
 
         }
     }

@@ -1,84 +1,25 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\data\\calc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:data\\calc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\data\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:data\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\data\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:data\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\data\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:data\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\interface\\icalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:interface\\icalc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|c:\\users\\hp\\documents\\github\\dotnetcore\\amazon\\minisupermarket\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3245FC96-C164-4492-95CF-288A8645F497}|MiniSuperMarket.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,225 +27,16 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-08T15:30:25.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "AppDBContext.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\AppDBContext.cs",
-              "RelativeToolTip": "AppDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T15:25:51.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Course.cs",
-              "RelativeDocumentMoniker": "Data\\Course.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Course.cs",
-              "RelativeToolTip": "Data\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T15:22:05.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Employee.cs",
-              "RelativeDocumentMoniker": "Data\\Employee.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Employee.cs",
-              "RelativeToolTip": "Data\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T15:21:52.627Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Student.cs",
-              "RelativeDocumentMoniker": "Data\\Student.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Student.cs",
-              "RelativeToolTip": "Data\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T15:21:32.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Calc.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Calc.cs",
-              "RelativeDocumentMoniker": "Data\\Calc.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Data\\Calc.cs",
-              "RelativeToolTip": "Data\\Calc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T15:42:05.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ICalc.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Interface\\ICalc.cs",
-              "RelativeDocumentMoniker": "Interface\\ICalc.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Interface\\ICalc.cs",
-              "RelativeToolTip": "Interface\\ICalc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T15:41:19.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T13:45:37.112Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\User\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\User\\Login.cshtml",
-              "RelativeToolTip": "Views\\User\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-04T13:42:32.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T16:02:43.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:33:25.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:33:21.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:26:57.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:24:45.679Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\User\\Register.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Views\\User\\Register.cshtml",
-              "RelativeToolTip": "Views\\User\\Register.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T15:19:33.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAcwHUAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:18:24.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "C:\\Users\\Hp\\Documents\\GitHub\\DotnetCore\\Amazon\\MiniSuperMarket\\Models\\Users.cs",
-              "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA5wB8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T15:13:00.843Z"
             }
           ]
         },
         {
-          "DockedWidth": 119,
+          "DockedHeight": 200,
           "SelectedChildIndex": -1,
           "Children": [
             {

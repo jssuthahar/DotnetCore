@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace EmployeeApp.Model
 {
-    public class StudentModel
+    public class Student
     {
         public int Sid { get; set; }
-        public string Name { get; set; }
+        public string  Sname { get; set; }
         public string Email { get; set; }
-        public string Phone { get; set; }
+
+        public int Phone { get; set; }
+        public string  Dob { get; set; }
+        public int Cid { get; set; }
         public string Address { get; set; }
-        public string DOB { get; set; }
-        public string Course { get; set; }
+
     }
 }

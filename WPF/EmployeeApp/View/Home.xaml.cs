@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Text;
+using System.Windows;
 using EmployeeApp.View.Pages;
 namespace EmployeeApp.View
 {
@@ -12,10 +13,15 @@ namespace EmployeeApp.View
             InitializeComponent();
         }
 
-     
-
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
+           
+            //Helper oh = new Helper();
+
+
+
+
+
             Student ostudent = new Student();
             MainFrame.Content = ostudent;
         }
